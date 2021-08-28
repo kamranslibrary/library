@@ -647,7 +647,8 @@ img.svg{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	margin-top: 100px;
-	padding-top: 30px;;
+	padding-top: 30px;
+	min-height: 600px;
 	height: auto;
 }
 .aola_tm_portfolio_list{
