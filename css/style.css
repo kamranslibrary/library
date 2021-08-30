@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /*---------------------------------------------------*/
-/*	01) AOLA BASE
+/*	01) library BASE
 /*---------------------------------------------------*/
 
 html {
@@ -28,12 +28,12 @@ img.svg{
 	width: 15px;
 	height: 15px;
 }
-.aola_tm_wrapper_all {
+.library_tm_wrapper_all {
 	border-bottom: 1px solid black;
 }
-.aola_tm_wrapper_all,
-.aola_tm_section,
-.aola_tm_content{
+.library_tm_wrapper_all,
+.library_tm_section,
+.library_tm_content{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -43,7 +43,7 @@ img.svg{
 	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
 			box-sizing: border-box; /* Opera/IE 8+ */ 
 }
-.aola_tm_content{
+.library_tm_content{
 	position: relative;
 	z-index: 1;
 }
@@ -71,7 +71,7 @@ img.svg{
 }
 
 /*---------------------------------------------------*/
-/*	02) AOLA HEADER
+/*	02) library HEADER
 /*---------------------------------------------------*/
 
 .dark_logo {
@@ -124,7 +124,7 @@ img.svg{
 	background-color: white;
 }
 
-.aola_tm_header{
+.library_tm_header{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -144,12 +144,12 @@ img.svg{
 	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
 			box-sizing: border-box; /* Opera/IE 8+ */
 }
-.aola_tm_header.scroll{background-color: rgba(255,255,255,.8);}
-.aola_tm_header.scroll .aola_tm_navigation_wrap .menu > ul > li a{color: #000;}
-.aola_tm_header.scroll .aola_tm_navigation_wrap .menu > ul > li a.current{color: #fff;}
-.aola_tm_header.scroll .aola_tm_navigation_wrap .social_icons_wrap > ul > li a{color: #000;}
-.aola_tm_navigation_wrap,
-.aola_tm_navigation_wrap .navigation_inner{
+.library_tm_header.scroll{background-color: rgba(255,255,255,.8);}
+.library_tm_header.scroll .library_tm_navigation_wrap .menu > ul > li a{color: #000;}
+.library_tm_header.scroll .library_tm_navigation_wrap .menu > ul > li a.current{color: #fff;}
+.library_tm_header.scroll .library_tm_navigation_wrap .social_icons_wrap > ul > li a{color: #000;}
+.library_tm_navigation_wrap,
+.library_tm_navigation_wrap .navigation_inner{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -159,7 +159,7 @@ img.svg{
 	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
 			box-sizing: border-box; /* Opera/IE 8+ */
 }
-.aola_tm_navigation_wrap{
+.library_tm_navigation_wrap{
 	min-height: 38px;	
 	line-height: 38px;
 	padding: 0px 0px;
@@ -170,14 +170,14 @@ img.svg{
 	     -o-transition: all .5s ease;
 	        transition: all .5s ease;
 }
-.aola_tm_header.scroll .aola_tm_navigation_wrap{padding: 0px 0px;}
-.aola_tm_navigation_wrap .navigation_inner{position: relative;}
-.aola_tm_navigation_wrap .logo{
+.library_tm_header.scroll .library_tm_navigation_wrap{padding: 0px 0px;}
+.library_tm_navigation_wrap .navigation_inner{position: relative;}
+.library_tm_navigation_wrap .logo{
 	position: absolute;
 	left: 0px;
 	top: 5px;
 }
-.aola_tm_navigation_wrap .nav_list_wrap{
+.library_tm_navigation_wrap .nav_list_wrap{
 	width: auto;
 	height: auto;
 	clear: both;
@@ -260,10 +260,10 @@ img.svg{
 
 
 /*---------------------------------------------------*/
-/*	03) AOLA MOBILE MENU
+/*	03) library MOBILE MENU
 /*---------------------------------------------------*/
 
-.aola_tm_mobile_menu_wrap{
+.library_tm_mobile_menu_wrap{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -278,7 +278,7 @@ img.svg{
 	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
 			box-sizing: border-box; /* Opera/IE 8+ */	
 }
-/* .aola_tm_mobile_menu_wrap .mob_menu{
+/* .library_tm_mobile_menu_wrap .mob_menu{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -287,13 +287,13 @@ img.svg{
 	-webkit-box-sizing: border-box; 
 	   -moz-box-sizing: border-box; 
 			box-sizing: border-box; 
-.aola_tm_mobile_menu_wrap .mob_menu > ul{
+.library_tm_mobile_menu_wrap .mob_menu > ul{
 	margin: 0px;
 	list-style-type: none;
 }
-.aola_tm_mobile_menu_wrap .mob_menu > ul > li{margin: 0px 0px 10px 0px;}
-.aola_tm_mobile_menu_wrap .mob_menu > ul > li:last-child{margin-bottom: 0px;}
-.aola_tm_mobile_menu_wrap .mob_menu > ul > li a{
+.library_tm_mobile_menu_wrap .mob_menu > ul > li{margin: 0px 0px 10px 0px;}
+.library_tm_mobile_menu_wrap .mob_menu > ul > li:last-child{margin-bottom: 0px;}
+.library_tm_mobile_menu_wrap .mob_menu > ul > li a{
 	text-decoration: none;
 	color: #000;
 	font-family: "Quicksand";
@@ -373,16 +373,16 @@ img.svg{
 
 
 /*---------------------------------------------------*/
-/*	04) AOLA HAMBURGER
+/*	04) library HAMBURGER
 /*---------------------------------------------------*/
 
-.aola_tm_trigger{
+.library_tm_trigger{
 	position: absolute;
 	right: 0px;
 	top: 11px;
 	display: none;
 }
-.aola_tm_trigger .hamburger{
+.library_tm_trigger .hamburger{
     padding: 15px 15px;
     display: inline-block;
     cursor: pointer;
@@ -397,18 +397,18 @@ img.svg{
     margin: 0;
     overflow: visible;
 }
-.aola_tm_trigger .hamburger-box{
+.library_tm_trigger .hamburger-box{
     width: 30px;
     height: 18px;
     display: inline-block;
     position: relative;
 }
-.aola_tm_trigger .hamburger-inner{
+.library_tm_trigger .hamburger-inner{
     display: block;
     top: 50%;
     margin-top: -2px;
 }
-.aola_tm_trigger .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+.library_tm_trigger .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
     width: 30px;
     height: 2px;
     background-color: #333333;
@@ -421,52 +421,52 @@ img.svg{
 	   -moz-border-radius: 4px;
 	        border-radius: 4px;
 }
-.aola_tm_trigger .hamburger-inner::before,
-.aola_tm_trigger .hamburger-inner::after{
+.library_tm_trigger .hamburger-inner::before,
+.library_tm_trigger .hamburger-inner::after{
     content: "";
     display: block;
 }
-.aola_tm_trigger .hamburger-inner::before{top: -8px;}
-.aola_tm_trigger .hamburger-inner::after{ bottom: -10px;}
-.aola_tm_trigger .hamburger--collapse-r .hamburger-inner{
+.library_tm_trigger .hamburger-inner::before{top: -8px;}
+.library_tm_trigger .hamburger-inner::after{ bottom: -10px;}
+.library_tm_trigger .hamburger--collapse-r .hamburger-inner{
     top: auto;
     bottom: 0;
     transition-duration: 0.13s;
     transition-delay: 0.13s;
     transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
-.aola_tm_trigger .hamburger--collapse-r .hamburger-inner::after{
+.library_tm_trigger .hamburger--collapse-r .hamburger-inner::after{
     top: -16px;
     transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear;
 }
-.aola_tm_trigger .hamburger--collapse-r .hamburger-inner::before{
+.library_tm_trigger .hamburger--collapse-r .hamburger-inner::before{
     transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
-.aola_tm_trigger .hamburger--collapse-r.is-active .hamburger-inner{
+.library_tm_trigger .hamburger--collapse-r.is-active .hamburger-inner{
     transform: translate3d(0, -10px, 0) rotate(45deg);
     transition-delay: 0.22s;
     transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.aola_tm_trigger .hamburger--collapse-r.is-active .hamburger-inner::after{
+.library_tm_trigger .hamburger--collapse-r.is-active .hamburger-inner::after{
     top: 0;
     opacity: 0;
     transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear;
 }
-.aola_tm_trigger .hamburger--collapse-r.is-active .hamburger-inner::before{
+.library_tm_trigger .hamburger--collapse-r.is-active .hamburger-inner::before{
     top: 0;
     transform: rotate(90deg);
     transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.aola_tm_trigger .hamburger{
+.library_tm_trigger .hamburger{
 	padding: 0px;
 	height: 100%;
 	display: table-cell;
 	vertical-align: middle;
 }
-.aola_tm_trigger .hamburger-box{display: block;}
-.aola_tm_trigger .hamburger .hamburger-inner::before,
-.aola_tm_trigger .hamburger .hamburger-inner::after,
-.aola_tm_trigger .hamburger .hamburger-inner{
+.library_tm_trigger .hamburger-box{display: block;}
+.library_tm_trigger .hamburger .hamburger-inner::before,
+.library_tm_trigger .hamburger .hamburger-inner::after,
+.library_tm_trigger .hamburger .hamburger-inner{
 	background-color: #000;
 	width: 30px;
 	
@@ -478,10 +478,10 @@ img.svg{
 }
 
 /*---------------------------------------------------*/
-/*	05) AOLA CONTENT
+/*	05) library CONTENT
 /*---------------------------------------------------*/
 
-.aola_tm_home_title_wrap{
+.library_tm_home_title_wrap{
 	width: 100%;
 	height: 10px;
 	float: left;
@@ -494,8 +494,8 @@ img.svg{
 	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
 			box-sizing: border-box; /* Opera/IE 8+ */
 }
-.aola_tm_home_title_wrap.index{margin-bottom: 50px}
-.aola_tm_portfolio_home_wrap{
+.library_tm_home_title_wrap.index{margin-bottom: 50px}
+.library_tm_portfolio_home_wrap{
 	width: 100%;
 	max-width: 1380px;
 	height: auto;
@@ -507,7 +507,7 @@ img.svg{
 	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
 			box-sizing: border-box; /* Opera/IE 8+ */
 }
-.aola_tm_portfolio_home_wrap .item{
+.library_tm_portfolio_home_wrap .item{
 	float: left;
 	/* overflow: hidden; */
 	
@@ -515,12 +515,12 @@ img.svg{
 	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
 			box-sizing: border-box; /* Opera/IE 8+ */
 }
-.aola_tm_portfolio_home_wrap .item .inner{
+.library_tm_portfolio_home_wrap .item .inner{
 	width: 100%;
 	height: 100%;
 	/* overflow: hidden; */
 }
-.aola_tm_portfolio_home_wrap .image{
+.library_tm_portfolio_home_wrap .image{
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
@@ -537,7 +537,7 @@ img.svg{
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.aola_tm_portfolio_home_wrap .image_overlay{
+.library_tm_portfolio_home_wrap .image_overlay{
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
@@ -555,7 +555,7 @@ img.svg{
 	opacity: 0;
 	visibility: hidden;
 }
-.aola_tm_portfolio_home_wrap .image_definition{
+.library_tm_portfolio_home_wrap .image_definition{
 	position: absolute;
 	width: 100%;
 	text-align: center;
@@ -566,7 +566,7 @@ img.svg{
 	opacity: 0;
 	visibility: hidden;
 }
-.aola_tm_portfolio_home_wrap .image_definition .title a{
+.library_tm_portfolio_home_wrap .image_definition .title a{
 	text-decoration: none;
 	color: #fff;
 	font-weight: 600;
@@ -574,7 +574,7 @@ img.svg{
 	font-family: "Open Sans";
 	font-size: 16px;
 }
-.aola_tm_portfolio_home_wrap .link{
+.library_tm_portfolio_home_wrap .link{
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
@@ -582,7 +582,7 @@ img.svg{
 	right: 0px;
 	z-index: 10;
 }
-.aola_tm_portfolio_home_wrap .link a{
+.library_tm_portfolio_home_wrap .link a{
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
@@ -590,19 +590,19 @@ img.svg{
 	right: 0px;
 	font-family: "Open Sans";
 }
-.aola_tm_portfolio_home_wrap .item:hover .image{transform: scale(1.1,1.1) translateZ(0);} 
-.aola_tm_portfolio_home_wrap .item:hover .image_overlay{
+.library_tm_portfolio_home_wrap .item:hover .image{transform: scale(1.1,1.1) translateZ(0);} 
+.library_tm_portfolio_home_wrap .item:hover .image_overlay{
 	opacity: 1;
 	visibility: visible;
 }
-.aola_tm_portfolio_home_wrap .item:hover .image_definition{
+.library_tm_portfolio_home_wrap .item:hover .image_definition{
 	opacity: 1;
 	visibility: visible;
 }
 
 
 
-.aola_tm_footer_wrap{
+.library_tm_footer_wrap{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -614,18 +614,18 @@ img.svg{
 
 }
 
-.aola_tm_footer_wrap .copyright{text-align:right;}
+.library_tm_footer_wrap .copyright{text-align:right;}
 
-.aola_tm_footer_wrap{	
+.library_tm_footer_wrap{	
 	color: #000;
 	padding-top: 0px;
 	font-weight: 500;
 }
 
 /*---------------------------------------------------*/
-/*	08) AOLA PORTFOLIO
+/*	08) library PORTFOLIO
 /*---------------------------------------------------*/
-.aola_tm_portfolio_wrap{
+.library_tm_portfolio_wrap{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -650,7 +650,7 @@ img.svg{
 	padding-top: 30px;;
 	height: auto;
 }
-.aola_tm_portfolio_list{
+.library_tm_portfolio_list{
 	list-style-type:none;
 	margin: 0px 0px 0px -30px;
 	
@@ -658,7 +658,7 @@ img.svg{
 	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
 			box-sizing: border-box; /* Opera/IE 8+ */
 }
-.aola_tm_portfolio_list > li{
+.library_tm_portfolio_list > li{
 	width:33.3333%;
 	float:left;
 	position:relative;
@@ -669,7 +669,7 @@ img.svg{
 	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
 			box-sizing: border-box; /* Opera/IE 8+ */
 }
-.aola_tm_portfolio_list .list_inner{
+.library_tm_portfolio_list .list_inner{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -687,13 +687,13 @@ img.svg{
 	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
 			box-sizing: border-box; /* Opera/IE 8+ */
 }
-.aola_tm_portfolio_list .list_inner:hover{
+.library_tm_portfolio_list .list_inner:hover{
 	-webkit-transform: translateY(-5px);
 		-ms-transform: translateY(-5px);
 		transform: translateY(-5px);
 }
 
-.aola_tm_portfolio_list .list_inner .translucent_bg{
+.library_tm_portfolio_list .list_inner .translucent_bg{
 	position: relative;
 	text-align: center;
 	width: 93%;
@@ -705,7 +705,7 @@ img.svg{
 	background-color: rgba(0,0,0,0.5);
 	border-radius: 5px;
 }
-.aola_tm_portfolio_list .list_inner .document_title{
+.library_tm_portfolio_list .list_inner .document_title{
 	/* line-height: 100px; */
 	padding: 15px;
 	font-size: 16px;
@@ -715,7 +715,7 @@ img.svg{
 	margin-bottom: 0px;
 }
 
-.aola_tm_portfolio_list .list_inner .document_description {
+.library_tm_portfolio_list .list_inner .document_description {
 	padding: 0px 15px 10px 15px;
 	font-size: 10px;
 	color: #fff;
@@ -723,12 +723,12 @@ img.svg{
 	margin-top: 0px;
 }
 
-.aola_tm_portfolio_list .list_inner .document_title p{
+.library_tm_portfolio_list .list_inner .document_title p{
 	display: absolute;
 	bottom: 0;
 }
 
-.aola_tm_portfolio_list .list_inner .image_overlay{
+.library_tm_portfolio_list .list_inner .image_overlay{
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
@@ -746,7 +746,7 @@ img.svg{
 	opacity: 0;
 	visibility: hidden;
 }
-.aola_tm_portfolio_list .image_definition{
+.library_tm_portfolio_list .image_definition{
 	position: absolute;
 	width: 100%;
 	text-align: center;
@@ -757,7 +757,7 @@ img.svg{
 	opacity: 0;
 	visibility: hidden;
 }
-.aola_tm_portfolio_list .image_definition .title a{
+.library_tm_portfolio_list .image_definition .title a{
 	text-decoration: none;
 	color: #fff;
 	font-size: 16px;
@@ -765,7 +765,7 @@ img.svg{
 	font-weight: 600;
 	display: inline-block;
 }
-.aola_tm_portfolio_list .link{
+.library_tm_portfolio_list .link{
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
@@ -773,125 +773,125 @@ img.svg{
 	right: 0px;
 	z-index: 10;
 }
-.aola_tm_portfolio_list .link a{
+.library_tm_portfolio_list .link a{
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
 }
-.aola_tm_portfolio_list .list_inner:hover .image_inner{transform: scale(1.1,1.1) translateZ(0);} 
-.aola_tm_portfolio_list .list_inner:hover .image_overlay{
+.library_tm_portfolio_list .list_inner:hover .image_inner{transform: scale(1.1,1.1) translateZ(0);} 
+.library_tm_portfolio_list .list_inner:hover .image_overlay{
 	opacity: 1;
 	visibility: visible;
 }
-.aola_tm_portfolio_list .list_inner:hover .image_definition{
+.library_tm_portfolio_list .list_inner:hover .image_definition{
 	opacity: 1;
 	visibility: visible;
 }
 
 
 /*---------------------------------------------------*/
-/*	13) AOLA MEDIA QUERIES (FOR SMALL DEVIVES)
+/*	13) library MEDIA QUERIES (FOR SMALL DEVIVES)
 /*---------------------------------------------------*/
 
 @media (max-width: 1200px) {
-	.aola_tm_twice_box_wrap .rightbox .team_list > ul > li{width: 50%;}
+	.library_tm_twice_box_wrap .rightbox .team_list > ul > li{width: 50%;}
 }
 @media (max-width: 1040px) {
-	.aola_tm_trigger{display: block;}
-	.aola_tm_navigation_wrap .nav_list_wrap{display: none;}
-	.aola_tm_portfolio_wrap{padding: 0px;}
-	.aola_tm_portfolio_home_wrap{padding: 0px 20px;}
-	.aola_tm_twice_box_wrap{display: block;}
-	.aola_tm_twice_box_wrap .leftbox{width: 100%;margin-bottom: 50px;}
-	.aola_tm_twice_box_wrap .rightbox{width: 100%;}
-	.aola_tm_news_wrap ul li{width: 50%;}
+	.library_tm_trigger{display: block;}
+	.library_tm_navigation_wrap .nav_list_wrap{display: none;}
+	.library_tm_portfolio_wrap{padding: 0px;}
+	.library_tm_portfolio_home_wrap{padding: 0px 20px;}
+	.library_tm_twice_box_wrap{display: block;}
+	.library_tm_twice_box_wrap .leftbox{width: 100%;margin-bottom: 50px;}
+	.library_tm_twice_box_wrap .rightbox{width: 100%;}
+	.library_tm_news_wrap ul li{width: 50%;}
 }
 @media (max-width: 768px) {
-	.aola_tm_home_title_wrap h3{font-size: 27px;}
-	.aola_tm_home_title_wrap .inner{padding-top: 135px;}
-	.aola_tm_home_title_wrap.index{margin-bottom: 150px;}
-	.aola_tm_home_title_wrap.portfolio{margin-bottom:  147px;}
-	.aola_tm_home_title_wrap{margin-bottom: 170px;}
-	.aola_tm_home_title_wrap.single{margin-bottom: 153px;}
-	.aola_tm_home_title_wrap.news{margin-bottom: 163px;}
-	.aola_tm_home_title_wrap.service{margin-bottom: 165px;}
-	.aola_tm_home_title_wrap.about{margin-bottom: 163px;}
-	.aola_tm_home_title_wrap.contact{margin-bottom: 150px;}
-	.aola_tm_twice_box_wrap .service_list_wrap ul li{width: 50%;}
-	.aola_tm_twice_box_wrap{margin-bottom: 150px;}
-	.aola_tm_twice_box_wrap.service{margin-bottom: 163px;}
-	.aola_tm_twice_box_wrap.single{margin-bottom: 165px;}
-	.aola_tm_twice_box_wrap.about{padding-top: 5px;margin-bottom: 145px;}
-	.aola_tm_portfolio_wrap{margin-bottom: 147px;}
-	.aola_tm_portfolio_home_wrap{margin-bottom: 160px;padding: 0px;}
-	.aola_tm_portfolio_list > li{width: 50%;}
-	.aola_tm_portfolio_filter li{margin-right: 30px;margin-bottom: 0px;}
-	.aola_tm_news_single_image .inner{padding-top: 137px;}
-	.aola_tm_news_wrap ul{margin: 0px;}
-	.aola_tm_news_wrap ul li{width: 100%;padding: 0px;}
-	.aola_tm_news_single_definitions_wrap{display: block;}
-	.aola_tm_news_single_definitions_wrap .leftbox{padding-right: 20px;margin-bottom: 50px;}
-	.aola_tm_short_contact_wrap .title h3{font-size: 27px;}
-	.aola_tm_short_contact_wrap{padding: 163px 20px 185px 20px;margin-bottom: 168px;}
-	.aola_tm_about_top_image{margin-bottom: 165px;}
-	.aola_tm_service_top_image{margin-bottom: 163px;}
-	.aola_tm_pagination_wrap{margin-bottom: 152px;}
-	.aola_tm_pagination_wrap .left{display: none;}
-	.aola_tm_news_pagination{margin-bottom: 163px;}
-	.aola_tm_footer_wrap{padding-bottom: 163px;}
-	.aola_tm_comment_contact{margin-bottom: 165px;}
-	.aola_tm_comment_contact .left{display: none;}
-	.aola_tm_twice_box_wrap.contact{margin-bottom: 150px;}
+	.library_tm_home_title_wrap h3{font-size: 27px;}
+	.library_tm_home_title_wrap .inner{padding-top: 135px;}
+	.library_tm_home_title_wrap.index{margin-bottom: 150px;}
+	.library_tm_home_title_wrap.portfolio{margin-bottom:  147px;}
+	.library_tm_home_title_wrap{margin-bottom: 170px;}
+	.library_tm_home_title_wrap.single{margin-bottom: 153px;}
+	.library_tm_home_title_wrap.news{margin-bottom: 163px;}
+	.library_tm_home_title_wrap.service{margin-bottom: 165px;}
+	.library_tm_home_title_wrap.about{margin-bottom: 163px;}
+	.library_tm_home_title_wrap.contact{margin-bottom: 150px;}
+	.library_tm_twice_box_wrap .service_list_wrap ul li{width: 50%;}
+	.library_tm_twice_box_wrap{margin-bottom: 150px;}
+	.library_tm_twice_box_wrap.service{margin-bottom: 163px;}
+	.library_tm_twice_box_wrap.single{margin-bottom: 165px;}
+	.library_tm_twice_box_wrap.about{padding-top: 5px;margin-bottom: 145px;}
+	.library_tm_portfolio_wrap{margin-bottom: 147px;}
+	.library_tm_portfolio_home_wrap{margin-bottom: 160px;padding: 0px;}
+	.library_tm_portfolio_list > li{width: 50%;}
+	.library_tm_portfolio_filter li{margin-right: 30px;margin-bottom: 0px;}
+	.library_tm_news_single_image .inner{padding-top: 137px;}
+	.library_tm_news_wrap ul{margin: 0px;}
+	.library_tm_news_wrap ul li{width: 100%;padding: 0px;}
+	.library_tm_news_single_definitions_wrap{display: block;}
+	.library_tm_news_single_definitions_wrap .leftbox{padding-right: 20px;margin-bottom: 50px;}
+	.library_tm_short_contact_wrap .title h3{font-size: 27px;}
+	.library_tm_short_contact_wrap{padding: 163px 20px 185px 20px;margin-bottom: 168px;}
+	.library_tm_about_top_image{margin-bottom: 165px;}
+	.library_tm_service_top_image{margin-bottom: 163px;}
+	.library_tm_pagination_wrap{margin-bottom: 152px;}
+	.library_tm_pagination_wrap .left{display: none;}
+	.library_tm_news_pagination{margin-bottom: 163px;}
+	.library_tm_footer_wrap{padding-bottom: 163px;}
+	.library_tm_comment_contact{margin-bottom: 165px;}
+	.library_tm_comment_contact .left{display: none;}
+	.library_tm_twice_box_wrap.contact{margin-bottom: 150px;}
 	body{line-height: 2.3;}
 }
 @media (max-width: 480px) {
-	.aola_tm_top_bar_wrap ul li{margin: 0px;}
-	.aola_tm_home_title_wrap h3{font-size: 24px;}
-	.aola_tm_home_title_wrap .inner{padding-top: 100px;}
-	.aola_tm_home_title_wrap.index{margin-bottom: 130px;}
-	.aola_tm_home_title_wrap.portfolio{margin-bottom:  132px;}
-	.aola_tm_home_title_wrap{margin-bottom: 150px;}
-	.aola_tm_home_title_wrap.single{margin-bottom: 130px;}
-	.aola_tm_home_title_wrap.news{margin-bottom: 138px;}
-	.aola_tm_home_title_wrap.contact{margin-bottom: 130px;}
-	.aola_tm_home_title_wrap.service{margin-bottom: 140px;}
-	.aola_tm_home_title_wrap.about{margin-bottom: 138px;}
-	.aola_tm_home_title_wrap.portfolio .inner{padding-top: 105px;}
-	.aola_tm_portfolio_wrap{margin-bottom: 122px;}
-	.aola_tm_footer_wrap{display: block;}
-	.aola_tm_footer_wrap .sharebox{padding-right: 0px;width: 100%;margin-bottom: 50px;}
-	.aola_tm_footer_wrap .copyright{width: 100%;text-align: left;}
-	.aola_tm_twice_box_wrap .rightbox .team_list > ul > li{width: 100%;padding: 0px;}
-	.aola_tm_twice_box_wrap.service{margin-bottom: 143px;}
-	.aola_tm_twice_box_wrap{margin-bottom: 130px;}
-	.aola_tm_twice_box_wrap.about{margin-bottom: 120px;}
-	.aola_tm_twice_box_wrap.single{margin-bottom: 145px;}
-	.aola_tm_twice_box_wrap .rightbox .team_list > ul{margin: 0px;}
-	.aola_tm_twice_box_wrap .service_list_wrap ul li{width: 100%;}
-	.aola_tm_twice_box_wrap .leftbox .title h3{font-size: 22px;}
-	.aola_tm_portfolio_home_wrap{margin-bottom: 130px;}
-	.aola_tm_portfolio_list > li{width: 100%;}
-	.aola_tm_portfolio_filter li{display: block;}
-	.aola_tm_short_contact_wrap .title h3{font-size: 24px;}
-	.aola_tm_short_contact_wrap .title{margin-bottom: 45px;}
-	.aola_tm_short_contact_wrap{padding: 138px 20px 162px 20px;}
-	.aola_tm_news_wrap{margin-bottom: 55px;}
-	.aola_tm_news_wrap ul li .definitions_wrap{padding: 0px 20px 50px 20px;}
-	.aola_tm_news_wrap ul li .title h3{font-size: 20px;}
-	.aola_tm_news_single_definitions_wrap .rightbox .title_holder h3{font-size: 22px;}
-	.aola_tm_news_single_image .inner{padding-top: 117px;}
-	.aola_tm_contact_wrap .title_holder h3{font-size: 22px;}
-	.aola_tm_twice_box_wrap .contact_title h3{font-size: 23px;}
-	.aola_tm_about_top_image{margin-bottom: 145px;}
-	.aola_tm_service_top_image{margin-bottom: 143px;}
-	.aola_tm_pagination_wrap{margin-bottom: 132px;}
-	.aola_tm_news_pagination{margin-bottom: 143px;}
-	.aola_tm_short_contact_wrap{margin-bottom: 143px;}
-	.aola_tm_comment_contact{margin-bottom: 145px;padding: 0px 10px;}
-	.aola_tm_twice_box_wrap.contact{margin-bottom: 130px;}
-	.aola_tm_footer_wrap{padding-bottom: 138px;}
+	.library_tm_top_bar_wrap ul li{margin: 0px;}
+	.library_tm_home_title_wrap h3{font-size: 24px;}
+	.library_tm_home_title_wrap .inner{padding-top: 100px;}
+	.library_tm_home_title_wrap.index{margin-bottom: 130px;}
+	.library_tm_home_title_wrap.portfolio{margin-bottom:  132px;}
+	.library_tm_home_title_wrap{margin-bottom: 150px;}
+	.library_tm_home_title_wrap.single{margin-bottom: 130px;}
+	.library_tm_home_title_wrap.news{margin-bottom: 138px;}
+	.library_tm_home_title_wrap.contact{margin-bottom: 130px;}
+	.library_tm_home_title_wrap.service{margin-bottom: 140px;}
+	.library_tm_home_title_wrap.about{margin-bottom: 138px;}
+	.library_tm_home_title_wrap.portfolio .inner{padding-top: 105px;}
+	.library_tm_portfolio_wrap{margin-bottom: 122px;}
+	.library_tm_footer_wrap{display: block;}
+	.library_tm_footer_wrap .sharebox{padding-right: 0px;width: 100%;margin-bottom: 50px;}
+	.library_tm_footer_wrap .copyright{width: 100%;text-align: left;}
+	.library_tm_twice_box_wrap .rightbox .team_list > ul > li{width: 100%;padding: 0px;}
+	.library_tm_twice_box_wrap.service{margin-bottom: 143px;}
+	.library_tm_twice_box_wrap{margin-bottom: 130px;}
+	.library_tm_twice_box_wrap.about{margin-bottom: 120px;}
+	.library_tm_twice_box_wrap.single{margin-bottom: 145px;}
+	.library_tm_twice_box_wrap .rightbox .team_list > ul{margin: 0px;}
+	.library_tm_twice_box_wrap .service_list_wrap ul li{width: 100%;}
+	.library_tm_twice_box_wrap .leftbox .title h3{font-size: 22px;}
+	.library_tm_portfolio_home_wrap{margin-bottom: 130px;}
+	.library_tm_portfolio_list > li{width: 100%;}
+	.library_tm_portfolio_filter li{display: block;}
+	.library_tm_short_contact_wrap .title h3{font-size: 24px;}
+	.library_tm_short_contact_wrap .title{margin-bottom: 45px;}
+	.library_tm_short_contact_wrap{padding: 138px 20px 162px 20px;}
+	.library_tm_news_wrap{margin-bottom: 55px;}
+	.library_tm_news_wrap ul li .definitions_wrap{padding: 0px 20px 50px 20px;}
+	.library_tm_news_wrap ul li .title h3{font-size: 20px;}
+	.library_tm_news_single_definitions_wrap .rightbox .title_holder h3{font-size: 22px;}
+	.library_tm_news_single_image .inner{padding-top: 117px;}
+	.library_tm_contact_wrap .title_holder h3{font-size: 22px;}
+	.library_tm_twice_box_wrap .contact_title h3{font-size: 23px;}
+	.library_tm_about_top_image{margin-bottom: 145px;}
+	.library_tm_service_top_image{margin-bottom: 143px;}
+	.library_tm_pagination_wrap{margin-bottom: 132px;}
+	.library_tm_news_pagination{margin-bottom: 143px;}
+	.library_tm_short_contact_wrap{margin-bottom: 143px;}
+	.library_tm_comment_contact{margin-bottom: 145px;padding: 0px 10px;}
+	.library_tm_twice_box_wrap.contact{margin-bottom: 130px;}
+	.library_tm_footer_wrap{padding-bottom: 138px;}
 	body{line-height: 2.1;}
 }	
 

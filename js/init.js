@@ -11,31 +11,31 @@ jQuery(document).ready(function(){
 	
 	// here all ready functions
 	
-	aola_tm_hamburger();
-	aola_tm_imgtosvg();
-	aola_tm_jarallax();
-	aola_tm_nav_bg_scroll();
-	aola_tm_contact_form();
-	aola_tm_hom_title();
-	aola_tm_portfolios();
-	aola_tm_portfolio();
-	aola_tm_portfolio_mobile();
-	aola_tm_isotope();
-	aola_tm_sticky_sidebar();
-	aola_tm_data_images();
+	library_tm_hamburger();
+	library_tm_imgtosvg();
+	library_tm_jarallax();
+	library_tm_nav_bg_scroll();
+	library_tm_contact_form();
+	library_tm_hom_title();
+	library_tm_portfolios();
+	library_tm_portfolio();
+	library_tm_portfolio_mobile();
+	library_tm_isotope();
+	library_tm_sticky_sidebar();
+	library_tm_data_images();
 	
 	jQuery(window).on('scroll',function(){
 		//e.preventDefault();
-		aola_tm_nav_bg_scroll();
+		library_tm_nav_bg_scroll();
 	});
 	
 	jQuery(window).on('resize',function(){
-		aola_tm_portfolios();
-		aola_tm_isotope();
+		library_tm_portfolios();
+		library_tm_isotope();
 	});
 
 	jQuery(window).load('body', function() {
-		jQuery('.aola_tm_home_title_wrap').addClass('appear');
+		jQuery('.library_tm_home_title_wrap').addClass('appear');
 	});
 	
 });
@@ -48,7 +48,7 @@ jQuery(document).ready(function(){
 // ---------------    IMAGE TO SVG    ------------------
 // -----------------------------------------------------
 
-function aola_tm_imgtosvg(){
+function library_tm_imgtosvg(){
 	
 	"use strict";
 	
@@ -82,12 +82,12 @@ function aola_tm_imgtosvg(){
 // ---------------  HAMBURGER  -------------------------
 // -----------------------------------------------------
 
-function aola_tm_hamburger(){
+function library_tm_hamburger(){
 	
 	"use strict";
 	
 	var hamburger 		= jQuery('.hamburger');
-	var mobileMenu		= jQuery('.aola_tm_mobile_menu_wrap');
+	var mobileMenu		= jQuery('.library_tm_mobile_menu_wrap');
 	
 	hamburger.on('click',function(){
 		var element 	= jQuery(this);
@@ -107,7 +107,7 @@ function aola_tm_hamburger(){
 // --------------------    JARALLAX    -----------------
 // -----------------------------------------------------
 
-function aola_tm_jarallax(){
+function library_tm_jarallax(){
 	
 	"use strict";
 	
@@ -133,14 +133,14 @@ function aola_tm_jarallax(){
 
 // filterable 
 
-function aola_tm_portfolio(){
+function library_tm_portfolio(){
 
 	"use strict";
 
 	if(jQuery().isotope) {
 
 		// Needed variables
-		var list 		 = jQuery('.aola_tm_portfolio_list');
+		var list 		 = jQuery('.library_tm_portfolio_list');
 		var filter		 = jQuery('.menu');
 
 		if(filter.length){
@@ -168,14 +168,14 @@ function aola_tm_portfolio(){
 	}
 }
 
-function aola_tm_portfolio_mobile(){
+function library_tm_portfolio_mobile(){
 
 	"use strict";
 
 	if(jQuery().isotope) {
 
 		// Needed variables
-		var list 		 = jQuery('.aola_tm_portfolio_list');
+		var list 		 = jQuery('.library_tm_portfolio_list');
 		var filter		 = jQuery('.mob_menu');
 
 		if(filter.length){
@@ -207,11 +207,11 @@ function aola_tm_portfolio_mobile(){
 // ------------    NAV BACKGROUND  SCROLL    -----------
 // -----------------------------------------------------
 
-function aola_tm_nav_bg_scroll(){
+function library_tm_nav_bg_scroll(){
 	
 	"use strict";
 	
-	var header 			= jQuery('.aola_tm_header');
+	var header 			= jQuery('.library_tm_header');
 	var windowScroll	= jQuery(window).scrollTop();
 	var W				= jQuery(window).width();
 	
@@ -231,7 +231,7 @@ function aola_tm_nav_bg_scroll(){
 // ----------------    CONTACT FORM    -----------------
 // -----------------------------------------------------
 
-function aola_tm_contact_form(){
+function library_tm_contact_form(){
 	
 	"use strict";
 	
@@ -283,13 +283,13 @@ function aola_tm_contact_form(){
 // -------------   HOME TITLE PADDING  -------------
 // -------------------------------------------------
 
-function aola_tm_hom_title(){
+function library_tm_hom_title(){
 	
 	"use strict";
 	
-	var header			= jQuery('.aola_tm_header').outerHeight();
-	var title			= jQuery('.aola_tm_home_title_wrap');
-	var newsImage		= jQuery('.aola_tm_news_single_image');
+	var header			= jQuery('.library_tm_header').outerHeight();
+	var title			= jQuery('.library_tm_home_title_wrap');
+	var newsImage		= jQuery('.library_tm_news_single_image');
 	
 	title.css({paddingTop:header});
 	newsImage.css({paddingTop:header});
@@ -299,18 +299,18 @@ function aola_tm_hom_title(){
 // -------------   PORTFOLIO -----------------------
 // -------------------------------------------------
 
-function aola_tm_portfolios(){
+function library_tm_portfolios(){
 	
 	"use strict";
 	
 	var WW					= jQuery(window).width();
-	var portfolioWidth		= jQuery('.aola_tm_portfolio_home_wrap').width();
-	var item				= jQuery('.aola_tm_portfolio_home_wrap .item');
-	var itemTall			= jQuery('.aola_tm_portfolio_home_wrap .item.tall');
-	var itemWide			= jQuery('.aola_tm_portfolio_home_wrap .item.wide');
-	var mTall				= jQuery('.aola_tm_portfolio_home_wrap .item.m_tall');
-	var mSimple				= jQuery('.aola_tm_portfolio_home_wrap .item.m_simple');
-	var mWide				= jQuery('.aola_tm_portfolio_home_wrap .item.m_wide');
+	var portfolioWidth		= jQuery('.library_tm_portfolio_home_wrap').width();
+	var item				= jQuery('.library_tm_portfolio_home_wrap .item');
+	var itemTall			= jQuery('.library_tm_portfolio_home_wrap .item.tall');
+	var itemWide			= jQuery('.library_tm_portfolio_home_wrap .item.wide');
+	var mTall				= jQuery('.library_tm_portfolio_home_wrap .item.m_tall');
+	var mSimple				= jQuery('.library_tm_portfolio_home_wrap .item.m_simple');
+	var mWide				= jQuery('.library_tm_portfolio_home_wrap .item.m_wide');
 	var col3				= Math.floor(portfolioWidth/3);
 	var col2				= Math.floor(portfolioWidth/2);
 	var col1				= Math.floor(portfolioWidth);
@@ -368,7 +368,7 @@ function aola_tm_portfolios(){
 // --------------    ISOTOPE MASONRY    ----------------
 // -----------------------------------------------------
 
-function aola_tm_isotope(){
+function library_tm_isotope(){
 	
 	"use strict";
 	
@@ -384,7 +384,7 @@ function aola_tm_isotope(){
 // ---------------   STICKY SIDEBAR    -----------------
 // -----------------------------------------------------
 
-function aola_tm_sticky_sidebar(){
+function library_tm_sticky_sidebar(){
 
 	"use strict";
 	
@@ -401,7 +401,7 @@ function aola_tm_sticky_sidebar(){
 // ---------------   DATA IMAGES    --------------------
 // -----------------------------------------------------
 
-function aola_tm_data_images(){
+function library_tm_data_images(){
 	
 	"use strict";
 	
